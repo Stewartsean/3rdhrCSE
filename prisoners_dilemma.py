@@ -378,8 +378,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
             # to compute your strategy
             if len(opponent_history)==0: #It's the first round: collude
                 return 'c'
-            if opponent_history[-1]=='b':
-                 return 'b'    
+            
             elif history[-1]=='c' and opponent_history[-1]=='c':
                 return 'c' # betray is they were severely punished last time
                 
